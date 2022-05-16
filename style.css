@@ -27,7 +27,7 @@ nav{
 .home{
     width: 100%;
     min-height: 100vh;
-    background-image: url(../images/home.jpg);
+    background-image: url(https://raw.githubusercontent.com/lashawty/lashawty_official_web/main/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
