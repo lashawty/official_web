@@ -1,0 +1,122 @@
+*{
+    margin: 0;padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+.logo{
+    display: inline-block;
+    width: 213px; height: 45px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    position: sticky;
+    left: 0;
+    top: 0;
+
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px;
+}
+
+#about{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+/* screen */
+@media (min-width:992px){
+    .barBTN{display: none;}
+    .navBAR{
+        width: 85%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .linkbar{
+        display: flex;
+    }
+    .linkbar a{
+        color: #fff;
+        width: 100px;
+        height: 100px;
+    }
+    .linkbar a:hover{
+        color: #FFA538;
+        border-bottom: 10px solid #FFA538;
+        padding-top: 10px;
+    }
+}
+/* mobile */
+@media (max-width:991px){
+    .barBTN,.barBTN:hover,.barBTN:focus{
+        color: #fff;
+        font-size: 32px;
+        width: 50px;
+        height: 50px;
+    }
+    .logo{
+        margin-left: 5%;
+    }
+    .navBAR{
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .linkbar{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        border-bottom: 5px solid #000;
+        background-color: #fff;
+        display: none;
+    }
+    .linkbar a,.linkbar a:hover{
+        color: #000;
+        width: 100%;
+        height: 60px;
+    }
+    .linkbar a:nth-child(odd){
+        background-color: #fff7f4;
+    }
+    .linkbar a:active,.linkbar a:focus{
+        background-color: #FFA538;
+        color: #fff;
+    }
+    .linkbarSHOW{
+        display: block;
+    }
+  
+}
+
+.box{
+    height: 1000px;
+}
