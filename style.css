@@ -23,11 +23,10 @@ nav{
     top: 0;
 
 }
-
 .home{
     width: 100%;
-    min-height: 100%;
-    background-image: url(home.jpg);
+    min-height: 100vh;
+    background-image: url(https://raw.githubusercontent.com/lashawty/lashawty_official_web/main/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -39,6 +38,7 @@ nav{
     color: white;
     padding: 30px;
 }
+
 
 #about{
     margin-top: 100px;
