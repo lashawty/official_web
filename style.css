@@ -23,7 +23,9 @@ nav{
     top: 0;
 
 }
+
 .home{
+    
     width: 100%;
     min-height: 100vh;
     background-image: url(https://raw.githubusercontent.com/lashawty/lashawty_official_web/main/home.jpg);
@@ -37,13 +39,110 @@ nav{
     align-items: center;
     color: white;
     padding: 30px;
+    
 }
-
 
 #about{
     margin-top: 100px;
     margin-bottom: 30px;
+    
 }
+.imgBGRWD{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img1{
+    background-image:url(../menu_1.jpg); 
+}
+.img2{
+    background-image:url(../menu_2.jpg); 
+}
+.img3{
+    background-image:url(../menu_3.jpg); 
+}
+.img4{
+    background-image:url(../menu_4.jpg); 
+}
+.img5{
+    background-image:url(../menu_5.jpg); 
+}
+
+.item{position: relative;}
+
+.item .itemBody a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: large;
+    opacity: 0;
+}
+.item .itemBody a:hover, .item .itemBody a:focus{
+    transition: all;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#menu .item:first-child{
+    width: 50%;
+}
+
+#menu .item:first-child~.item{
+    width: 25%;
+}
+
+#menu .item{
+    float: left;
+}
+#features{
+    clear: both;
+    padding-top: 100px;
+    padding-bottom: 2em;
+}
+.itemList{
+    background-color: #949494;
+}
+
+.itemList:nth-child(odd){
+    background-color: #ffffff;
+}
+
+.itemList{
+    padding: 10px;
+    align-items: center;
+}
+
+.itemList p{
+    margin: 0;
+}
+footer{
+    background-color: #3a3a3a;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    padding: 2em;
+}
+.iconBAR a{
+    font-size: 32px;
+    color: #9d9d9d;
+    padding: 5px;
+    margin-right: 5px;
+}
+.iconBAR a:hover,.iconBAR a:focus{
+    color: rgb(229, 229, 229);
+}
+
+.googleMap iframe{
+    filter: grayscale(50%);
+    display: block;
+  }
+
 /* screen */
 @media (min-width:992px){
     .barBTN{display: none;}
@@ -64,8 +163,8 @@ nav{
         height: 100px;
     }
     .linkbar a:hover{
-        color: #FFA538;
-        border-bottom: 10px solid #FFA538;
+        color: #9d9d9d;
+        border-bottom: 10px solid #9d9d9d;
         padding-top: 10px;
     }
 }
@@ -95,28 +194,35 @@ nav{
         position: absolute;
         left: 0;
         top: 100px;
-        border-bottom: 5px solid #000;
-        background-color: #fff;
+        border-bottom: 5px solid rgba(103, 102, 102, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
         display: none;
     }
     .linkbar a,.linkbar a:hover{
-        color: #000;
+        color: rgb(255, 255, 255);
         width: 100%;
         height: 60px;
     }
     .linkbar a:nth-child(odd){
-        background-color: #fff7f4;
+        background-color: rgba(103, 102, 102, 0.8);
     }
     .linkbar a:active,.linkbar a:focus{
-        background-color: #FFA538;
+        background-color: #3a3a3a;
         color: #fff;
     }
     .linkbarSHOW{
         display: block;
     }
-  
+}
+#about, #product, #contact{
+    scroll-behavior: smooth;
+    scroll-margin-top: 150px;
 }
 
-.box{
-    height: 1000px;
+
+
+#menu, #info{
+    scroll-behavior: smooth;
+    scroll-margin-top: 200px;  
 }
+
