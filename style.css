@@ -53,19 +53,19 @@ nav{
     background-position: center;
 }
 .img1{
-    background-image:url(../menu_1.jpg); 
+    background-image:url(menu_1.jpg); 
 }
 .img2{
-    background-image:url(../menu_2.jpg); 
+    background-image:url(menu_2.jpg); 
 }
 .img3{
-    background-image:url(../menu_3.jpg); 
+    background-image:url(menu_3.jpg); 
 }
 .img4{
-    background-image:url(../menu_4.jpg); 
+    background-image:url(menu_4.jpg); 
 }
 .img5{
-    background-image:url(../menu_5.jpg); 
+    background-image:url(menu_5.jpg); 
 }
 
 .item{position: relative;}
