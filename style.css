@@ -143,6 +143,9 @@ footer{
     display: block;
   }
 
+.contact{
+    width: fit-content;
+}
 /* screen */
 @media (min-width:992px){
     .barBTN{display: none;}
